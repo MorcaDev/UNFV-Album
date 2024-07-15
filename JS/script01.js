@@ -11,7 +11,6 @@ window.addEventListener(`load`, (e) => {
       });
     },
   });
-
   document.querySelector("a-scene").setAttribute("vr-handler", "");
 
   let m = document.querySelector(`#videoMarker`);
