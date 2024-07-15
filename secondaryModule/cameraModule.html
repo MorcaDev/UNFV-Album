@@ -8,12 +8,12 @@
     <script src="https://rawgit.com/donmccurdy/aframe-extras/master/dist/aframe-extras.loaders.min.js"></script>
 
     <!-- archivos js principales para funcionalidad -->
-
     <script type="text/javascript" src="../JS/script01.js"></script>
 
     <!-- cs  -->
     <link rel="stylesheet" href="../CS/cameraModuleStyle.css" />
   </head>
+
   <body style="margin: 0; overflow: hidden">
     <div id="linkContainer">
       <a href="../index.html">Main Page </a>
@@ -64,21 +64,5 @@
 
       <a-entity camera></a-entity>
     </a-scene>
-    <script>
-      AFRAME.registerComponent("vr-handler", {
-        init: function () {
-          var sky = document.querySelector("#sky");
-          this.el.sceneEl.addEventListener("enter-vr", function () {
-            sky.setAttribute("visible", "true");
-            sky.setAttribute("src", "../src/images360/img360_001.jpg");
-          });
-          this.el.sceneEl.addEventListener("exit-vr", function () {
-            sky.setAttribute("visible", "false");
-          });
-        },
-      });
-
-      document.querySelector("a-scene").setAttribute("vr-handler", "");
-    </script>
   </body>
 </html>
