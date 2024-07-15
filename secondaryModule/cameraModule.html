@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Villa AR</title>
+    <!-- librerias de ARjs y AFrame -->
+    <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+    <script src="https://cdn.rawgit.com/jeromeetienne/AR.js/2.1.7/aframe/build/aframe-ar.js"></script>
+    <script src="https://rawgit.com/donmccurdy/aframe-extras/master/dist/aframe-extras.loaders.min.js"></script>
+
+    <!-- archivos js principales para funcionalidad -->
+
+    <script type="text/javascript" src="../JS/script01.js"></script>
+
+    <!-- cs  -->
+    <link rel="stylesheet" href="../CS/cameraModuleStyle.css" />
+  </head>
+  <body style="margin: 0; overflow: hidden">
+    <div id="linkContainer">
+      <a href="../index.html">Main Page </a>
+    </div>
+    <a-scene embedded arjs="sourceType: webcam; debugUIEnabled: false;">
+      <!-- marcadores de video -->
+
+      <a-marker
+        id="videoMarker"
+        type="pattern"
+        url="../src/img/patt/marker01/pattern-img01.patt"
+      >
+        <video
+          id="miVideo"
+          crossorigin="anonymous"
+          src="../src/videos/villaInformacion.mp4"
+        ></video>
+
+        <a-video src="#miVideo" position="0 0 0" rotation="270 0 0"></a-video>
+      </a-marker>
+
+      <!-- Imagen 360 -->
+      <a-sky id="sky" visible="false" rotation="0 -130 0"></a-sky>
+
+      <!-- marcadores de Imagen -->
+
+      <!-- <a-marker type="pattern" url="../src/img/patt/pattern-hiro.patt">
+        <a-plane
+          id="imagePlaneHiro"
+          position="0 0 0"
+          rotation="-90 0 0"
+          width="4"
+          height="2.25"
+          material="shader: flat; src: url(../src/img/images/capture.jpg)"
+        ></a-plane>
+      </a-marker> -->
+
+      <!-- <a-marker type="pattern" url="../src/img/patt/pattern-marker.patt">
+        <a-plane
+          id="imagePlaneMarker"
+          position="0 0 0"
+          rotation="-90 0 0"
+          width="4"
+          height="2.25"
+          material="shader: flat; src: url(../src/img/images/gato.jpg)"
+        ></a-plane>
+      </a-marker> -->
+
+      <a-entity camera></a-entity>
+    </a-scene>
+    <script>
+      AFRAME.registerComponent("vr-handler", {
+        init: function () {
+          var sky = document.querySelector("#sky");
+          this.el.sceneEl.addEventListener("enter-vr", function () {
+            sky.setAttribute("visible", "true");
+            sky.setAttribute("src", "../src/images360/img360_001.jpg");
+          });
+          this.el.sceneEl.addEventListener("exit-vr", function () {
+            sky.setAttribute("visible", "false");
+          });
+        },
+      });
+
+      document.querySelector("a-scene").setAttribute("vr-handler", "");
+    </script>
+  </body>
+</html>
