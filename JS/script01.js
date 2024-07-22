@@ -13,6 +13,8 @@ window.addEventListener(`load`, (e) => {
   });
   document.querySelector("a-scene").setAttribute("vr-handler", "");
 
+
+
   let m = document.querySelector(`#videoMarker`);
   m.addEventListener("markerFound", (e) => {
     let v = document.querySelector(`#miVideo`);
@@ -22,5 +24,16 @@ window.addEventListener(`load`, (e) => {
   m.addEventListener("markerLost", (e) => {
     let v = document.querySelector(`#miVideo`);
     v.pause();
+  });
+
+  let m02 = document.querySelector(`#videoMarker02`);
+  m02.addEventListener("markerFound", (e) => {
+    let v02 = document.querySelector(`#miVideo02`);
+    v02.play();
+  });
+
+  m02.addEventListener("markerLost", (e) => {
+    let v02 = document.querySelector(`#miVideo02`);
+    v02.pause();
   });
 });
