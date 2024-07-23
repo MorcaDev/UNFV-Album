@@ -1,4 +1,5 @@
 window.addEventListener(`load`, (e) => {
+  
   AFRAME.registerComponent("vr-handler", {
     init: function () {
       var sky = document.querySelector("#sky");
