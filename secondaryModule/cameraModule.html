@@ -3,7 +3,7 @@
   <head>
     <title>Villa AR</title>
     <!-- librerias de ARjs y AFrame -->
-    <script src=”https://rawgit.com/donmccurdy/aframe-extras/master/dist/aframe-extras.loaders.min.js"></script>
+    <script src="https://rawgit.com/donmccurdy/aframe-extras/master/dist/aframe-extras.loaders.min.js"></script>
     <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
     <script src="https://cdn.rawgit.com/jeromeetienne/AR.js/2.1.7/aframe/build/aframe-ar.js"></script>
     <script src="https://rawgit.com/donmccurdy/aframe-extras/master/dist/aframe-extras.loaders.j.mins"></script>
@@ -17,113 +17,46 @@
 
   <body style="margin: 0; overflow: hidden">
     <div id="linkContainer">
-      <a href="../index.html">Main Page </a>
+      <a href="../index.html">Regresar</a>
     </div>
     <a-scene embedded arjs="sourceType: webcam; debugUIEnabled: false;">
-      <!-- marcadores de video -->
+
+      <!-- MARCADORES DE VIDEO -->
+
+      <!-- VILLAREAL -->
       <a-marker
         id="videoMarker"
         type="pattern"
-        url="../src/img/patt/marker01/pattern-img01.patt"
+        url="../src/videos/unfv/marker.patt"
       >
         <video
           id="miVideo"
           crossorigin="anonymous"
-          src="../src/videos/villaInformacion.mp4"
+          src="../src/videos/unfv/villaInformacion.mp4"
         ></video>
 
         <a-video src="#miVideo" position="0 0 0" rotation="270 0 0"></a-video>
       </a-marker>
 
+      <!-- FIEI -->
       <a-marker
         id="videoMarker02"
         type="pattern"
-        url="../src/img/patt/marker07/pattern-img07.patt"
+        url="../src/videos/fiei/marker.patt"
       >
         <video
           id="miVideo02"
           crossorigin="anonymous"
-          src="../src/videos/fiei_video_cede_sucursal.mp4"
+          src="../src/videos/fiei/fiei_video_cede_sucursal.mp4"
         ></video>
 
         <a-video src="#miVideo02" position="0 0 0" rotation="270 0 0"></a-video>
       </a-marker>
 
-      <!-- Imagen 360 -->
+      <!-- IMAGEN 360 -->
       <a-sky id="sky" visible="false" rotation="0 -130 0"></a-sky>
 
-      <!-- marcadores de Imagen -->
-      <a-marker
-        type="pattern"
-        url="../src/img/patt/marker02/pattern-img02.patt"
-      >
-        <a-plane
-          id="imagePlaneHiro"
-          position="0 0 0"
-          rotation="-90 0 0"
-          width="4"
-          height="2.25"
-          material="shader: flat; src: url(../src/img/markerImages/i01.jpeg)"
-        ></a-plane>
-      </a-marker>
-
-      <a-marker
-        type="pattern"
-        url="../src/img/patt/marker03/pattern-img03.patt"
-      >
-        <a-plane
-          id="imagePlaneHiro01"
-          position="0 0 0"
-          rotation="-90 0 0"
-          width="4"
-          height="2.25"
-          material="shader: flat; src: url(../src/img/markerImages/i02.jpeg)"
-        ></a-plane>
-      </a-marker>
-
-      <a-marker
-        type="pattern"
-        url="../src/img/patt/marker04/pattern-img04.patt"
-      >
-        <a-plane
-          id="imagePlaneHiro"
-          position="0 0 0"
-          rotation="-90 0 0"
-          width="4"
-          height="2.25"
-          material="shader: flat; src: url(../src/img/markerImages/i03.jpeg)"
-        ></a-plane>
-      </a-marker>
-
-      <a-marker
-        type="pattern"
-        url="../src/img/patt/marker05/pattern-img05.patt"
-      >
-        <a-plane
-          id="imagePlaneHiro"
-          position="0 0 0"
-          rotation="-90 0 0"
-          width="4"
-          height="2.25"
-          material="shader: flat; src: url(../src/img/markerImages/i04.jpeg)"
-        ></a-plane>
-      </a-marker>
-
-      <a-marker
-        type="pattern"
-        url="../src/img/patt/marker06/pattern-img06.patt"
-      >
-        <a-plane
-          id="imagePlaneHiro"
-          position="0 0 0"
-          rotation="-90 0 0"
-          width="4"
-          height="2.25"
-          material="shader: flat; src: url(../src/img/markerImages/i05.jpeg)"
-        ></a-plane>
-      </a-marker>
-
-      <!-- implementacion 3d -->
+      <!-- IMPLENTACION 3D -->
 
       <!-- INFORMATICA -->
       <a-marker 
@@ -144,7 +77,7 @@
       >
         <a-entity 
         gltf-model="url(../src/3d/mecatronica/model.glb);""
-        scale="2 2 2"
+        scale="0.7 0.7 0.7"
         rotation="0 180 0" >
         </a-entity>              
       </a-marker>
@@ -152,26 +85,26 @@
       <!-- ELECTRONICA -->
       <a-marker
         type="pattern"
-        url="../src/img/patt/marker08/pattern-img08.patt"
+        url="../src/3d/electronica/marker.patt"
       >
         <a-obj-model
-          src="../src/ModelsMesh/model02/SignalTower.obj"
-          mtl="../src/ModelsMesh/model02/SignalTower.mtl"
+          src="../src/3d/electronica/electrica.obj"
+          mtl="../src/3d/electronica/electrica.mtl"
           scale="0.1 0.1 0.1"
-          rotation="0 180 200"
+          rotation="0 90 270"
         ></a-obj-model>
       </a-marker>
 
       <!-- TELECOMUNICACIONES -->
       <a-marker
         type="pattern"
-        url="../src/img/patt/marker09/pattern-img09.patt"
+        url="../src/3d/telecomunicaciones/marker.patt"
       >
         <a-obj-model
-          src="../src/ModelsMesh/model03/electrica.obj"
-          mtl="../src/ModelsMesh/model03/electrica.mtl"
+          src="../src/3d/telecomunicaciones/SignalTower.obj"
+          mtl="../src/3d/telecomunicaciones/SignalTower.mtl"
           scale="0.1 0.1 0.1"
-          rotation="0 90 270"
+          rotation="0 180 210"
         ></a-obj-model>
       </a-marker>
 
