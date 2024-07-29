@@ -10,6 +10,7 @@
 
     <!-- archivos js principales para funcionalidad -->
     <script type="text/javascript" src="../JS/script01.js"></script>
+    <script type="text/javascript" src="../JS/script03.js"></script>
 
     <!-- cs  -->
     <link rel="stylesheet" href="../CS/cameraModuleStyle.css" />
@@ -95,6 +96,19 @@
           scale="0.1 0.1 0.1"
           rotation="0 180 210"
         ></a-obj-model>
+      </a-marker>
+
+      <!-- PROFESORES -->
+      <a-marker type="pattern" url="../src/img/profesores/marcador/marker.patt">
+        <a-plane
+          id="profesImagePlane"
+          scale="0.8 0.8 0.8"
+          position="0 0 0"
+          rotation="-90 0 0"
+          width="4"
+          height="2.25"
+          material="shader: flat; src: url(../src/img/profesores/cesar cuba.jpg)"
+        ></a-plane>
       </a-marker>
 
       <a-entity camera></a-entity>
