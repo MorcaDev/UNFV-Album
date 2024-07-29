@@ -20,7 +20,6 @@
       <a href="../index.html">Regresar</a>
     </div>
     <a-scene embedded arjs="sourceType: webcam; debugUIEnabled: false;">
-
       <!-- MARCADORES DE VIDEO -->
 
       <!-- VILLAREAL -->
@@ -59,34 +58,27 @@
       <!-- IMPLENTACION 3D -->
 
       <!-- INFORMATICA -->
-      <a-marker 
-        type="pattern"
-        url="../src/3d/informatica/marker.patt"
-      >
-        <a-entity 
-        gltf-model="url(../src/3d/informatica/model.glb);"
-        scale="12 12 12"
-        rotation="0 180 200" >
-        </a-entity>              
+      <a-marker type="pattern" url="../src/3d/informatica/marker.patt">
+        <a-entity
+          gltf-model="url(../src/3d/informatica/model.glb);"
+          scale="12 12 12"
+          rotation="0 180 200"
+        >
+        </a-entity>
       </a-marker>
 
       <!-- MECATRONICA -->
-      <a-marker 
-        type="pattern"
-        url="../src/3d/mecatronica/marker.patt"
-      >
-        <a-entity 
-        gltf-model="url(../src/3d/mecatronica/model.glb);""
-        scale="0.7 0.7 0.7"
-        rotation="0 180 0" >
-        </a-entity>              
+      <a-marker type="pattern" url="../src/3d/mecatronica/marker.patt">
+        <a-entity
+          gltf-model="url(../src/3d/mecatronica/model.glb);"
+          scale="0.7 0.7 0.7"
+          rotation="0 180 0"
+        >
+        </a-entity>
       </a-marker>
 
       <!-- ELECTRONICA -->
-      <a-marker
-        type="pattern"
-        url="../src/3d/electronica/marker.patt"
-      >
+      <a-marker type="pattern" url="../src/3d/electronica/marker.patt">
         <a-obj-model
           src="../src/3d/electronica/electrica.obj"
           mtl="../src/3d/electronica/electrica.mtl"
@@ -96,10 +88,7 @@
       </a-marker>
 
       <!-- TELECOMUNICACIONES -->
-      <a-marker
-        type="pattern"
-        url="../src/3d/telecomunicaciones/marker.patt"
-      >
+      <a-marker type="pattern" url="../src/3d/telecomunicaciones/marker.patt">
         <a-obj-model
           src="../src/3d/telecomunicaciones/SignalTower.obj"
           mtl="../src/3d/telecomunicaciones/SignalTower.mtl"
