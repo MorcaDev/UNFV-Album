@@ -19,7 +19,6 @@
       <a href="../index.html">Main Page </a>
     </div>
     <a-scene embedded arjs="sourceType: webcam; debugUIEnabled: false;">
-      
       <!-- marcadores de video -->
       <a-marker
         id="videoMarker"
@@ -51,8 +50,8 @@
 
       <!-- Imagen 360 -->
       <a-sky id="sky" visible="false" rotation="0 -130 0"></a-sky>
-      <!-- marcadores de Imagen -->
 
+      <!-- marcadores de Imagen -->
       <a-marker
         type="pattern"
         url="../src/img/patt/marker02/pattern-img02.patt"
@@ -121,6 +120,31 @@
           height="2.25"
           material="shader: flat; src: url(../src/img/markerImages/i05.jpeg)"
         ></a-plane>
+      </a-marker>
+
+      <!-- implementacion 3d -->
+      <a-marker
+        type="pattern"
+        url="../src/img/patt/marker08/pattern-img08.patt"
+      >
+        <a-obj-model
+          src="../src/ModelsMesh/model02/SignalTower.obj"
+          mtl="../src/ModelsMesh/model02/SignalTower.mtl"
+          scale="0.1 0.1 0.1"
+          rotation="0 180 200"
+        ></a-obj-model>
+      </a-marker>
+
+      <a-marker
+        type="pattern"
+        url="../src/img/patt/marker09/pattern-img09.patt"
+      >
+        <a-obj-model
+          src="../src/ModelsMesh/model03/electrica.obj"
+          mtl="../src/ModelsMesh/model03/electrica.mtl"
+          scale="0.1 0.1 0.1"
+          rotation="0 90 270"
+        ></a-obj-model>
       </a-marker>
 
       <a-entity camera></a-entity>
