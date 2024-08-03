@@ -1,4 +1,5 @@
 window.addEventListener("load", () => {
+  // PROFESORES
   const profesImages = [
     "../src/img/profesores/cesar cuba.jpg",
     "../src/img/profesores/ciro rodriguez.jpg",
@@ -26,4 +27,26 @@ window.addEventListener("load", () => {
   }
 
   changeProfesImage();
+
+  // BIBLIOTECA
+  const bibliotecaImage = [
+    "../src/img/biblioteca/img_01.jpg",
+    "../src/img/biblioteca/img_02.jpg",
+  ];
+
+  const bibliotecaImagePlane = document.getElementById("bibliotecaImagePlane");
+  let currentIndex_biblio = 0;
+
+  function changeBibliotecaImage() {
+    setInterval(() => {
+      bibliotecaImagePlane.setAttribute(
+        "material",
+        "src",
+        bibliotecaImage[currentIndex_biblio]
+      );
+      currentIndex_biblio = (currentIndex_biblio + 1) % bibliotecaImage.length;
+    }, 3000);
+  }
+
+  changeBibliotecaImage();
 });
