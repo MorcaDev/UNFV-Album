@@ -21,7 +21,12 @@
     <div id="linkContainer">
       <a href="../index.html">Regresar</a>
     </div>
-    <a-scene id="a-scene" embedded arjs="sourceType: webcam; debugUIEnabled: false;" gesture-detector>
+    <a-scene
+      id="a-scene"
+      embedded
+      arjs="sourceType: webcam; debugUIEnabled: false;"
+      gesture-detector
+    >
       <!-- MARCADORES DE VIDEO -->
 
       <!-- VILLAREAL -->
@@ -55,50 +60,74 @@
       </a-marker>
 
       <!-- MARCADORES 3D -->
- 
+
       <!-- INFORMATICA -->
-      <a-marker  id="informatica_marker" type="pattern" url="../src/3d/informatica/marker.patt" raycaster="objects: .clickable" cursor="fuse: false; rayOrigin: mouse;" emitevents="true">
+      <a-marker
+        id="informatica_marker"
+        type="pattern"
+        url="../src/3d/informatica/marker.patt"
+        raycaster="objects: .clickable"
+        cursor="fuse: false; rayOrigin: mouse;"
+        emitevents="true"
+      >
         <a-entity
           id="informatica_entity"
           gltf-model="url(../src/3d/informatica/model.glb);"
           scale="12 12 12"
           rotation="0 180 200"
-          
         ></a-entity>
       </a-marker>
- 
+
       <!-- MECATRONICA -->
-      <a-marker id="mecatronica_marker" type="pattern" url="../src/3d/mecatronica/marker.patt" raycaster="objects: .clickable" cursor="fuse: false; rayOrigin: mouse;" emitevents="true">
+      <a-marker
+        id="mecatronica_marker"
+        type="pattern"
+        url="../src/3d/mecatronica/marker.patt"
+        raycaster="objects: .clickable"
+        cursor="fuse: false; rayOrigin: mouse;"
+        emitevents="true"
+      >
         <a-entity
           id="mecatronica_entity"
           gltf-model="url(../src/3d/mecatronica/model.glb);"
           scale="0.7 0.7 0.7"
           rotation="0 180 0"
-          
         ></a-entity>
       </a-marker>
- 
+
       <!-- ELECTRONICA -->
-      <a-marker id="electronica_marker" type="pattern" url="../src/3d/electronica/marker.patt" raycaster="objects: .clickable" cursor="fuse: false; rayOrigin: mouse;" emitevents="true">
+      <a-marker
+        id="electronica_marker"
+        type="pattern"
+        url="../src/3d/electronica/marker.patt"
+        raycaster="objects: .clickable"
+        cursor="fuse: false; rayOrigin: mouse;"
+        emitevents="true"
+      >
         <a-obj-model
           id="electronica_entity"
           src="../src/3d/electronica/electrica.obj"
           mtl="../src/3d/electronica/electrica.mtl"
           scale="0.1 0.1 0.1"
           rotation="0 90 270"
-          
         ></a-obj-model>
       </a-marker>
- 
+
       <!-- TELECOMUNICACIONES -->
-      <a-marker id="telecomunicaciones_marker" type="pattern" url="../src/3d/telecomunicaciones/marker.patt" raycaster="objects: .clickable" cursor="fuse: false; rayOrigin: mouse;" emitevents="true">
+      <a-marker
+        id="telecomunicaciones_marker"
+        type="pattern"
+        url="../src/3d/telecomunicaciones/marker.patt"
+        raycaster="objects: .clickable"
+        cursor="fuse: false; rayOrigin: mouse;"
+        emitevents="true"
+      >
         <a-obj-model
           id="telecomunicaciones_entity"
           src="../src/3d/telecomunicaciones/SignalTower.obj"
           mtl="../src/3d/telecomunicaciones/SignalTower.mtl"
           scale="0.1 0.1 0.1"
           rotation="0 180 210"
-          
         ></a-obj-model>
       </a-marker>
 

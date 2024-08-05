@@ -1,0 +1,165 @@
+* {
+  font-family: "Quicksand", sans-serif;
+  color: white;
+}
+
+body {
+  background: linear-gradient(to bottom, #1138b8 0%, #030a25 40%);
+}
+
+/* NAVEGATION */
+
+.desktopNav {
+  display: flex;
+  justify-content: space-between;
+  background-color: #ffffff33;
+  border-radius: 0px 0px 30px 30px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  backdrop-filter: blur(100px);
+  -webkit-backdrop-filter: blur(100px);
+}
+
+.desktopNav__imag--page {
+  max-width: 4rem;
+}
+
+.desktopNav__list li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  margin: 1rem;
+}
+
+.desktopNav__img,
+.desktopNav__list {
+  margin: 0 4rem;
+}
+
+.desktopNav__list--items {
+  display: flex;
+  justify-content: center;
+  font-weight: 600;
+}
+
+/* MAIN */
+.desktopMain {
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.desktopMain__text {
+  margin: 5rem;
+  font-size: 2rem;
+  text-align: center;
+  font-weight: 800;
+}
+.desktopMain__options {
+  text-align: center;
+  display: grid;
+  grid-template-rows: repeat(6, 15rem);
+  grid-template-columns: repeat(2, 30rem);
+  gap: 15px;
+}
+
+/* OPTIONS IMAGES */
+
+.INFORMATICA {
+  grid-column: 1/2;
+  grid-row: 1/3;
+  background-image: url("https://worldcampus.saintleo.edu/img/article/ventajas-informatica-empresas.webp");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  transition: transform 0.2s linear;
+}
+
+.text01 {
+  grid-column: 2/3;
+  grid-row: 1/2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.MECATRONICA {
+  grid-column: 2/3;
+  grid-row: 2/4;
+  background-image: url("https://www2.ucsm.edu.pe/wp-content/uploads/2023/07/Ingenieria-Mecatronica.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  transition: transform 0.2s linear;
+}
+.text02 {
+  grid-column: 1/2;
+  grid-row: 3/4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.ELECTRONICA {
+  grid-column: 1/2;
+  grid-row: 4/6;
+  background-image: url("https://serviciostecnicosmovil.com/wp-content/uploads/2019/09/electronica.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  transition: transform 0.2s linear;
+}
+.text03 {
+  grid-column: 2/3;
+  grid-row: 4/5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.TELECOMUNICACIONES {
+  grid-column: 2/3;
+  grid-row: 5/7;
+  background-image: url("https://guinea.pe/wp-content/uploads/2021/09/importancia-telecomunicaciones-fibra.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  transition: transform 0.2s linear;
+}
+.text04 {
+  grid-column: 1/2;
+  grid-row: 6/7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.INFORMATICA,
+.MECATRONICA,
+.TELECOMUNICACIONES,
+.ELECTRONICA {
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.INFORMATICA:hover,
+.MECATRONICA:hover,
+.TELECOMUNICACIONES:hover,
+.ELECTRONICA:hover {
+  transform: rotate(-1deg);
+}
+
+.text01,
+.text02,
+.text03,
+.text04 {
+  font-size: 1.5rem;
+}

@@ -6,6 +6,6 @@ window.addEventListener("load", () => {
     window.location.href = "./secondaryModule/villa_ar.html";
   });
   button02.addEventListener("click", () => {
-    window.location.href = "./secondaryModule/villa_ar.html";
+    window.location.href = "./secondaryModule/villa_vr.html";
   });
 });
