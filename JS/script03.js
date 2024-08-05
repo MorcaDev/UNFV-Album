@@ -32,6 +32,7 @@ window.addEventListener("load", () => {
   const bibliotecaImage = [
     "../src/img/biblioteca/img_01.jpg",
     "../src/img/biblioteca/img_02.jpg",
+    "../src/img/biblioteca/img_03.jpg",
   ];
 
   const bibliotecaImagePlane = document.getElementById("bibliotecaImagePlane");
@@ -49,4 +50,29 @@ window.addEventListener("load", () => {
   }
 
   changeBibliotecaImage();
+
+  // SALONES
+  const salonImage = [
+    "../src/img/salones/img_01.jpg",
+    "../src/img/salones/img_02.jpg",
+    "../src/img/salones/img_03.jpg",
+    "../src/img/salones/img_04.jpg",
+  ];
+
+  const salonImagePlane = document.getElementById("salonImagePlane");
+  let currentIndex_salon = 0;
+
+  function changeSalonImage() {
+    setInterval(() => {
+      salonImagePlane.setAttribute(
+        "material",
+        "src",
+        salonImage[currentIndex_salon]
+      );
+      currentIndex_salon = (currentIndex_salon + 1) % salonImage.length;
+    }, 3000);
+  }
+
+  changeSalonImage();
+
 });
