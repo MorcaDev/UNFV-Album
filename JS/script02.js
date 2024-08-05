@@ -1,11 +1,11 @@
 window.addEventListener("load", () => {
-  const button01 = document.querySelector(`.nav__button`);
-  const button02 = document.querySelector(`.main__button`);
+  const buttons = document.querySelectorAll(".main__button");
+  let buttonArray = [...buttons];
 
-  button01.addEventListener("click", () => {
-    window.location.href = "./secondaryModule/villa_ar.html";
-  });
-  button02.addEventListener("click", () => {
+  buttonArray[0].addEventListener("click", () => {
     window.location.href = "./secondaryModule/villa_vr.html";
+  });
+  buttonArray[1].addEventListener("click", () => {
+    window.location.href = "./secondaryModule/villa_ar.html";
   });
 });

@@ -26,7 +26,7 @@ a {
 }
 
 .nav__logo {
-  flex: 4;
+  flex: 2;
 }
 .nav__img {
   width: 5rem;
@@ -41,6 +41,7 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 0;
 }
 .nav__li {
   padding: 0 50px 0 50px;
@@ -113,6 +114,9 @@ a {
   color: aliceblue;
   text-align: justify;
 }
+.main__textMainButton {
+  font-size: 19px;
+}
 .main__textMain:nth-child(1) {
   width: 70%;
   font-size: 16px;
@@ -167,11 +171,16 @@ button:hover {
   .main__text {
     display: flex;
     width: auto;
-    margin: 40vh auto;
+    margin: 30vh 15px;
     color: aliceblue;
-    text-align: justify;
+    text-align: center;
     flex-direction: column;
     justify-content: center;
+  }
+
+  .main__textMainButton {
+    text-align: center;
+    font-size: 1.5rem;
   }
   .main__textMain:nth-child(1) {
     margin: 10px auto;
