@@ -3,9 +3,9 @@ window.addEventListener("load", () => {
   let buttonArray = [...buttons];
 
   buttonArray[0].addEventListener("click", () => {
-    window.location.href = "./secondaryModule/villa_vr.html";
+    window.location.href = "./WebPages/villa_vr.html";
   });
   buttonArray[1].addEventListener("click", () => {
-    window.location.href = "./secondaryModule/villa_ar.html";
+    window.location.href = "./WebPages/villa_ar.html";
   });
 });

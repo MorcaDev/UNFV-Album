@@ -7,18 +7,18 @@ window.addEventListener("load", () => {
   const img04 = document.querySelector(`.TELECOMUNICACIONES`);
 
   img01.addEventListener("click", () => {
-    window.location.href = "./vr_gallery/scene_informatica.html";
+    window.location.href = "./vr_gallery/informatica.html";
   });
   img02.addEventListener("click", () => {
-    window.location.href = "./vr_gallery/scene_mecatronica.html";
+    window.location.href = "./vr_gallery/mecatronica.html";
   });
 
   img03.addEventListener("click", () => {
-    window.location.href = "./vr_gallery/scene_electronica.html";
+    window.location.href = "./vr_gallery/electronica.html";
   });
 
   img04.addEventListener("click", () => {
-    window.location.href = "./vr_gallery/scene_telecomunicaciones.html";
+    window.location.href = "./vr_gallery/telecomunicaciones.html";
   });
 
   //mobile devices
@@ -29,17 +29,17 @@ window.addEventListener("load", () => {
   const mb04 = document.querySelector(`.mobileMain__TELECOMUNICACIONES`);
 
   mb01.addEventListener("click", () => {
-    window.location.href = "./vr_gallery/scene_informatica.html";
+    window.location.href = "./vr_gallery/informatica.html";
   });
   mb02.addEventListener("click", () => {
-    window.location.href = "./vr_gallery/scene_mecatronica.html";
+    window.location.href = "./vr_gallery/mecatronica.html";
   });
 
   mb03.addEventListener("click", () => {
-    window.location.href = "./vr_gallery/scene_electronica.html";
+    window.location.href = "./vr_gallery/electronica.html";
   });
 
   mb04.addEventListener("click", () => {
-    window.location.href = "./vr_gallery/scene_telecomunicaciones.html";
+    window.location.href = "./vr_gallery/telecomunicaciones.html";
   });
 });

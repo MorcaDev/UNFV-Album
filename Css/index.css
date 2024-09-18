@@ -99,7 +99,7 @@ a {
   top: 0;
   z-index: 10;
   position: absolute;
-  background-image: url("../src/img/images/backgroundImage.png");
+  background-image: url("../Assets/img/images/backgroundImage.png");
   background-size: cover;
   background-repeat: no-repeat;
   aspect-ratio: 16/9;
