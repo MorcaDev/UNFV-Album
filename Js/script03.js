@@ -1,15 +1,15 @@
 window.addEventListener("load", () => {
   // PROFESORES
   const profesImages = [
-    "../src/img/profesores/cesar cuba.jpg",
-    "../src/img/profesores/ciro rodriguez.jpg",
-    "../src/img/profesores/ivan crispin.jpg",
-    "../src/img/profesores/jose gil.jpg",
-    "../src/img/profesores/juan francisco madrid cisneros.jpg",
-    "../src/img/profesores/roberto casas.jpg",
-    "../src/img/profesores/ronal paredes.jpg",
-    "../src/img/profesores/tito aguilar.jpg",
-    "../src/img/profesores/vladimir hilario quispe orihuela.jpg",
+    "../Assets/img/profesores/cesar cuba.jpg",
+    "../Assets/img/profesores/ciro rodriguez.jpg",
+    "../Assets/img/profesores/ivan crispin.jpg",
+    "../Assets/img/profesores/jose gil.jpg",
+    "../Assets/img/profesores/juan francisco madrid cisneros.jpg",
+    "../Assets/img/profesores/roberto casas.jpg",
+    "../Assets/img/profesores/ronal paredes.jpg",
+    "../Assets/img/profesores/tito aguilar.jpg",
+    "../Assets/img/profesores/vladimir hilario quispe orihuela.jpg",
   ];
 
   const profesImagePlane = document.getElementById("profesImagePlane");
@@ -30,9 +30,9 @@ window.addEventListener("load", () => {
 
   // BIBLIOTECA
   const bibliotecaImage = [
-    "../src/img/biblioteca/img_01.jpg",
-    "../src/img/biblioteca/img_02.jpg",
-    "../src/img/biblioteca/img_03.jpg",
+    "../Assets/img/biblioteca/img_01.jpg",
+    "../Assets/img/biblioteca/img_02.jpg",
+    "../Assets/img/biblioteca/img_03.jpg",
   ];
 
   const bibliotecaImagePlane = document.getElementById("bibliotecaImagePlane");
@@ -53,10 +53,10 @@ window.addEventListener("load", () => {
 
   // SALONES
   const salonImage = [
-    "../src/img/salones/img_01.jpg",
-    "../src/img/salones/img_02.jpg",
-    "../src/img/salones/img_03.jpg",
-    "../src/img/salones/img_04.jpg",
+    "../Assets/img/salones/img_01.jpg",
+    "../Assets/img/salones/img_02.jpg",
+    "../Assets/img/salones/img_03.jpg",
+    "../Assets/img/salones/img_04.jpg",
   ];
 
   const salonImagePlane = document.getElementById("salonImagePlane");
