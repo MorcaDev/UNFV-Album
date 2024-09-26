@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Villa AR</title>
+    <title>VILLA - AR</title>
+    <link rel="shortcut icon" href="../Assets/img/book.png" type="image/x-icon">
     <!-- ARjs & AFrame -->
     <script src="https://rawgit.com/donmccurdy/aframe-extras/master/dist/aframe-extras.loaders.min.js"></script>
     <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
@@ -9,13 +10,13 @@
     <script src="https://rawgit.com/donmccurdy/aframe-extras/master/dist/aframe-extras.loaders.j.mins"></script>
     <script src="https://raw.githack.com/fcor/arjs-gestures/master/dist/gestures.js"></script>
     <!-- css  -->
-    <link rel="stylesheet" href="../Css/cameraModuleStyle.css" />
+    <link rel="stylesheet" href="../Assets/css/cameraModuleStyle.css" />
   </head>
 
   <body style="margin: 0; overflow: hidden">
     <!-- Return link -->
     <div id="linkContainer">
-      <a href="../index.html">Regresar</a>
+      <a href="../index.html">Return</a>
     </div>
     <!-- Ar Scene -->
     <a-scene id="a-scene" embedded arjs="sourceType: webcam; debugUIEnabled: false;" gesture-detector>
@@ -25,12 +26,12 @@
         <a-marker
           id="videoMarker"
           type="pattern"
-          url="../Assets/videos/unfv/marker.patt"
+          url="../Content/videos/unfv/marker.patt"
         >
           <video
             id="miVideo"
             crossorigin="anonymous"
-            src="../Assets/videos/unfv/villaInformacion.mp4"
+            src="../Content/videos/unfv/villaInformacion.mp4"
           ></video>
 
           <a-video src="#miVideo" position="0 0 0" rotation="270 0 0"></a-video>
@@ -40,12 +41,12 @@
         <a-marker
           id="videoMarker02"
           type="pattern"
-          url="../Assets/videos/fiei/marker.patt"
+          url="../Content/videos/fiei/marker.patt"
         >
           <video
             id="miVideo02"
             crossorigin="anonymous"
-            src="../Assets/videos/fiei/fiei_video_cede_sucursal.mp4"
+            src="../Content/videos/fiei/fiei_video_cede_sucursal.mp4"
           ></video>
 
           <a-video src="#miVideo02" position="0 0 0" rotation="270 0 0"></a-video>
@@ -57,14 +58,14 @@
         <a-marker
           id="informatica_marker"
           type="pattern"
-          url="../Assets/3d/informatica/marker.patt"
+          url="../Content/3d/informatica/marker.patt"
           raycaster="objects: .clickable"
           cursor="fuse: false; rayOrigin: mouse;"
           emitevents="true"
         >
           <a-entity
             id="informatica_entity"
-            gltf-model="url(../Assets/3d/informatica/model.glb);"
+            gltf-model="url(../Content/3d/informatica/model.glb);"
             scale="12 12 12"
             rotation="0 180 200"
           ></a-entity>
@@ -74,14 +75,14 @@
         <a-marker
           id="mecatronica_marker"
           type="pattern"
-          url="../Assets/3d/mecatronica/marker.patt"
+          url="../Content/3d/mecatronica/marker.patt"
           raycaster="objects: .clickable"
           cursor="fuse: false; rayOrigin: mouse;"
           emitevents="true"
         >
           <a-entity
             id="mecatronica_entity"
-            gltf-model="url(../Assets/3d/mecatronica/model.glb);"
+            gltf-model="url(../Content/3d/mecatronica/model.glb);"
             scale="0.7 0.7 0.7"
             rotation="0 180 0"
           ></a-entity>
@@ -91,15 +92,15 @@
         <a-marker
           id="electronica_marker"
           type="pattern"
-          url="../Assets/3d/electronica/marker.patt"
+          url="../Content/3d/electronica/marker.patt"
           raycaster="objects: .clickable"
           cursor="fuse: false; rayOrigin: mouse;"
           emitevents="true"
         >
           <a-obj-model
             id="electronica_entity"
-            src="../Assets/3d/electronica/electrica.obj"
-            mtl="../Assets/3d/electronica/electrica.mtl"
+            src="../Content/3d/electronica/electrica.obj"
+            mtl="../Content/3d/electronica/electrica.mtl"
             scale="0.1 0.1 0.1"
             rotation="0 90 270"
           ></a-obj-model>
@@ -109,15 +110,15 @@
         <a-marker
           id="telecomunicaciones_marker"
           type="pattern"
-          url="../Assets/3d/telecomunicaciones/marker.patt"
+          url="../Content/3d/telecomunicaciones/marker.patt"
           raycaster="objects: .clickable"
           cursor="fuse: false; rayOrigin: mouse;"
           emitevents="true"
         >
           <a-obj-model
             id="telecomunicaciones_entity"
-            src="../Assets/3d/telecomunicaciones/SignalTower.obj"
-            mtl="../Assets/3d/telecomunicaciones/SignalTower.mtl"
+            src="../Content/3d/telecomunicaciones/SignalTower.obj"
+            mtl="../Content/3d/telecomunicaciones/SignalTower.mtl"
             scale="0.1 0.1 0.1"
             rotation="0 180 210"
           ></a-obj-model>
@@ -126,7 +127,7 @@
       <!-- MARCADORES FOTOS-LOOP -->
 
         <!-- SALONES -->
-        <a-marker type="pattern" url="../Assets/img/salones/marker.patt">
+        <a-marker type="pattern" url="../Content/img/salones/marker.patt">
           <a-plane
             id="salonImagePlane"
             scale="0.8 0.8 0.8"
@@ -134,12 +135,12 @@
             rotation="-90 0 0"
             width="4"
             height="2.25"
-            material="shader: flat; src: url(../Assets/img/salones/img_01.jpg)"
+            material="shader: flat; src: url(../Content/img/salones/img_01.jpg)"
           ></a-plane>
         </a-marker>
 
         <!-- BIBLIOTECA -->
-        <a-marker type="pattern" url="../Assets/img/biblioteca/marker.patt">
+        <a-marker type="pattern" url="../Content/img/biblioteca/marker.patt">
           <a-plane
             id="bibliotecaImagePlane"
             scale="0.8 0.8 0.8"
@@ -147,12 +148,12 @@
             rotation="-90 0 0"
             width="4"
             height="2.25"
-            material="shader: flat; src: url(../Assets/img/biblioteca/img_01.jpg)"
+            material="shader: flat; src: url(../Content/img/biblioteca/img_01.jpg)"
           ></a-plane>
         </a-marker>
 
         <!-- PROFESORES -->
-        <a-marker type="pattern" url="../Assets/img/profesores/marker.patt">
+        <a-marker type="pattern" url="../Content/img/profesores/marker.patt">
           <a-plane
             id="profesImagePlane"
             scale="0.8 0.8 0.8"
@@ -160,14 +161,14 @@
             rotation="-90 0 0"
             width="4"
             height="2.25"
-            material="shader: flat; src: url(../Assets/img/profesores/cesar cuba.jpg)"
+            material="shader: flat; src: url(../Content/img/profesores/cesar cuba.jpg)"
           ></a-plane>
         </a-marker>
 
       <!-- MARCADORES SIMPLE FOTO -->
 
         <!-- EVENTO -->
-        <a-marker type="pattern" url="../Assets/img/evento/markerevent.patt">
+        <a-marker type="pattern" url="../Content/img/evento/markerevent.patt">
           <a-plane
             id="eventmarker"
             scale="0.8 0.8 0.8"
@@ -175,14 +176,14 @@
             rotation="-90 0 0"
             width="4"
             height="2.25"
-            material="shader: flat; src: url(../Assets/img/evento/feria.jpg)"
+            material="shader: flat; src: url(../Content/img/evento/feria.jpg)"
           ></a-plane>
         </a-marker>
 
       <a-entity camera></a-entity>
     </a-scene>
     <!-- other functionalities -->
-    <script type="text/javascript" src="../Js/script01.js"></script>
-    <script type="text/javascript" src="../Js/script03.js"></script>
+    <script type="text/javascript" src="../Assets/js/script01.js"></script>
+    <script type="text/javascript" src="../Assets/js/script03.js"></script>
   </body>
 </html>

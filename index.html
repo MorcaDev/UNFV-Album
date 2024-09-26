@@ -1,48 +1,136 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Villa AR</title>
-    <!-- css -->
-    <link rel="stylesheet" href="./Css/normalize.css" />
-    <link rel="stylesheet" href="./Css/index.css" />
-    <!-- fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet"/>
-  </head>
+<html data-bs-theme="light" lang="en">
 
-  <body class="container">
-    <!-- navigation -->
-    <nav class="nav">
-      <div class="nav__principal">
-        <div class="nav__logo">
-          <img class="nav__img" src="./Assets/img/images/Logo.png" />
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>UNFV - Album</title>
+    <link rel="shortcut icon" href="./Assets/img/book.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="Assets/css/Navbar-With-Button-icons.css">
+</head>
+
+<body>
+    <!-- NAVIGATION BAR -->
+    <nav class="navbar navbar-expand-md bg-body py-3" style="position: relative;width: 100%;border-style: none;border-color: rgb(235,122,58);border-bottom: 1px solid rgb(235,122,58) ;">
+        <div class="container"><a class="navbar-brand d-flex align-items-center" href="#"><span class="bs-icon-sm bs-icon-rounded bs-icon-primary d-flex justify-content-center align-items-center me-2 bs-icon" style="background: rgb(235,122,58);"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-book">
+                        <path d="M1 2.828c.885-.37 2.154-.769 3.388-.893 1.33-.134 2.458.063 3.112.752v9.746c-.935-.53-2.12-.603-3.213-.493-1.18.12-2.37.461-3.287.811V2.828zm7.5-.141c.654-.689 1.782-.886 3.112-.752 1.234.124 2.503.523 3.388.893v9.923c-.918-.35-2.107-.692-3.287-.81-1.094-.111-2.278-.039-3.213.492V2.687zM8 1.783C7.015.936 5.587.81 4.287.94c-1.514.153-3.042.672-3.994 1.105A.5.5 0 0 0 0 2.5v11a.5.5 0 0 0 .707.455c.882-.4 2.303-.881 3.68-1.02 1.409-.142 2.59.087 3.223.877a.5.5 0 0 0 .78 0c.633-.79 1.814-1.019 3.222-.877 1.378.139 2.8.62 3.681 1.02A.5.5 0 0 0 16 13.5v-11a.5.5 0 0 0-.293-.455c-.952-.433-2.48-.952-3.994-1.105C10.413.809 8.985.936 8 1.783"></path>
+                    </svg></span><span>UNFV</span></a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-2"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navcol-2">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item" style="color: rgb(235,122,58);"><a class="nav-link active" href="https://drive.google.com/file/d/18ONJZSgLNvrtnUgw-4qtaopOQpyJVY0c/view" style="color: rgb(235,122,58);"><span style="color: var(--bs-navbar-active-color);">Album</span></a></li>
+                    <li class="nav-item"><a class="nav-link" href="./WebPages/villa_ar.html"><span style="color: rgb(0, 0, 0);">Villa-AR</span></a></li>
+                    <li class="nav-item"><a class="nav-link" href="./WebPages/villa_vr.html"><span style="color: rgb(0, 0, 0);">Villa-VR</span></a></li>
+                </ul>
+            </div>
         </div>
-        <ul class="nav__list">
-          <li class="nav__li"><a href="./index.html">Inicio</a></li>
-          <li class="nav__li"><a href="#">Nosotros</a></li>
-          <li class="nav__li"><a href="#">Contactos</a></li>
-        </ul>
-      </div>
     </nav>
-    <!-- main content -->
-    <div class="main">
-      <div class="main__text">
-        <p class="main__textMain">
-          LA NUEVA FORMA DE NAVEGACION E INFORMACION PARA LA FIEI
-        </p>
-        <h1 class="main__textMain">
-          SIMPLIFICA TU RECORRIDO CON LA TECNOLOGIA AVANZADA DE AR.JS EN LA FIEI
-          DESDE EL 360
-        </h1>
+    <!-- HEADER BANNER -->
+    <section style="margin-top: 0px;padding-top: 0px;">
+        <!-- BANNER -->
+        <div class="d-flex flex-column flex-grow-0 justify-content-center align-items-center" style="height: 600px;background: url(&quot;Assets/img/header_banner.jpg&quot;) center / cover;display: flex;border-bottom: 1px solid rgb(235,122,58);">
+            <h1 style="display: inline-block;text-align: center;width: 100%;font-weight: bold;text-shadow: 0px 0px 0px var(--bs-body-bg), -10px 0px 13px var(--bs-emphasis-color);color: rgb(237,138,81);border-color: rgb(248,132,65);">UNFV - Album</h1>
+        </div>
+        <!-- OPTIONS -->
+        <div class="container h-100 position-relative" style="top: -50px;">
+            <div class="row gy-5 gy-lg-0 row-cols-1 row-cols-md-2 row-cols-lg-3">
+                <!-- DIGITAL ALBUM -->
+                <div class="col offset-sm-0">
+                    <div class="card" style="border-style: solid;">
+                        <div class="card-body pt-5 p-4">
+                            <div class="bs-icon-lg bs-icon-rounded bs-icon-primary d-flex flex-shrink-0 justify-content-center align-items-center position-absolute mb-3 bs-icon lg" style="top: -30px;background: rgb(237,138,81);"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-images">
+                                    <path d="M4.502 9a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3"></path>
+                                    <path d="M14.002 13a2 2 0 0 1-2 2h-10a2 2 0 0 1-2-2V5A2 2 0 0 1 2 3a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v8a2 2 0 0 1-1.998 2M14 2H4a1 1 0 0 0-1 1h9.002a2 2 0 0 1 2 2v7A1 1 0 0 0 15 11V3a1 1 0 0 0-1-1M2.002 4a1 1 0 0 0-1 1v8l2.646-2.354a.5.5 0 0 1 .63-.062l2.66 1.773 3.71-3.71a.5.5 0 0 1 .577-.094l1.777 1.947V5a1 1 0 0 0-1-1h-10"></path>
+                                </svg></div>
+                            <h4 class="card-title"><span style="text-decoration: underline;">Digital Album</span></h4>
+                            <p class="card-text">Online document which contains markers with the interactive media content for the experience.</p>
+                        </div>
+                        <div class="card-footer p-4 py-3"><a href="https://drive.google.com/file/d/18ONJZSgLNvrtnUgw-4qtaopOQpyJVY0c/view" style="color: rgb(237,138,81);">Click Here&nbsp;<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-arrow-right">
+                                    <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"></path>
+                                </svg></a></div>
+                    </div>
+                </div>
+                <!-- AR EXPERIENCE -->
+                <div class="col">
+                    <div class="card">
+                        <div class="card-body pt-5 p-4">
+                            <div class="bs-icon-lg bs-icon-rounded bs-icon-primary d-flex flex-shrink-0 justify-content-center align-items-center position-absolute mb-3 bs-icon lg" style="top: -30px;background: rgb(237,138,81);"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-camera-fill">
+                                    <path d="M10.5 8.5a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0"></path>
+                                    <path d="M2 4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2h-1.172a2 2 0 0 1-1.414-.586l-.828-.828A2 2 0 0 0 9.172 2H6.828a2 2 0 0 0-1.414.586l-.828.828A2 2 0 0 1 3.172 4zm.5 2a.5.5 0 1 1 0-1 .5.5 0 0 1 0 1m9 2.5a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0"></path>
+                                </svg></div>
+                            <h4 class="card-title"><span style="text-decoration: underline;">AR Experience</span></h4>
+                            <p class="card-text">A technology that overlays digital elements, such as images onto the real world.</p>
+                        </div>
+                        <div class="card-footer p-4 py-3"><a href="./WebPages/villa_ar.html" style="color: rgb(237,138,81);">Click Here&nbsp;<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-arrow-right">
+                                    <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"></path>
+                                </svg></a></div>
+                    </div>
+                </div>
+                <!-- VR EXPERIENCE -->
+                <div class="col">
+                    <div class="card">
+                        <div class="card-body pt-5 p-4">
+                            <div class="bs-icon-lg bs-icon-rounded bs-icon-primary d-flex flex-shrink-0 justify-content-center align-items-center position-absolute mb-3 bs-icon lg" style="top: -30px;background: rgb(237,138,81);"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-headset-vr">
+                                    <path d="M8 1.248c1.857 0 3.526.641 4.65 1.794a4.978 4.978 0 0 1 2.518 1.09C13.907 1.482 11.295 0 8 0 4.75 0 2.12 1.48.844 4.122a4.979 4.979 0 0 1 2.289-1.047C4.236 1.872 5.974 1.248 8 1.248"></path>
+                                    <path d="M12 12a3.988 3.988 0 0 1-2.786-1.13l-.002-.002a1.612 1.612 0 0 0-.276-.167A2.164 2.164 0 0 0 8 10.5c-.414 0-.729.103-.935.201a1.612 1.612 0 0 0-.277.167l-.002.002A4 4 0 1 1 4 4h8a4 4 0 0 1 0 8"></path>
+                                </svg></div>
+                            <h4 class="card-title"><span style="text-decoration: underline;">VR Experience</span></h4>
+                            <p class="card-text">A fully immersive digital environment that recreates all laboratoies scenes in the college.</p>
+                        </div>
+                        <div class="card-footer p-4 py-3"><a href="./WebPages/villa_vr.html" style="color: rgb(237,138,81);">Click Here&nbsp;<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-arrow-right">
+                                    <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"></path>
+                                </svg></a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- GALLERY -->
+    <section>
+        <div class="container d-flex flex-column align-items-center py-4 py-xl-5">
+            <!-- TITLE -->
+            <div class="row mb-5">
+                <div class="col-md-8 col-xl-6 text-center mx-auto">
+                    <h2>Enjoy the Experience</h2>
+                    <p class="w-lg-50">🥽 The UNFV Album, was developed to provide an immersive experience using Virtual Reality&nbsp;(VR) and Augmented Reality (AR). In this experience you will know all about the UNFV (Federico Villarreal National University - 🇵🇪) 🧡.</p>
+                </div>
+            </div>
+            <!-- IMAGES -->
+            <div class="row gy-4 w-100" style="max-width: 800px;">
+                <div class="col-12">
+                    <div class="card"><img class="card-img w-100 d-block" src="Assets/img/unfv_banner.png">
+                        <div class="card-img-overlay text-center d-flex flex-column justify-content-center align-items-center p-4"></div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6">
+                    <div class="card"><img class="card-img w-100 d-block" src="Assets/img/fiei_banner.png">
+                        <div class="card-img-overlay text-center d-flex flex-column justify-content-center align-items-center p-4"></div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6">
+                    <div class="card"><img class="card-img w-100 d-block" src="Assets/img/graduation.jpg">
+                        <div class="card-img-overlay text-center d-flex flex-column justify-content-center align-items-center p-4"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- FOOTER -->
+    <footer class="text-center">
+        <div class="container text-muted py-4 py-lg-5" style="border-top: 1px solid rgb(235,122,58) ;border-bottom-style: none;border-bottom-color: rgb(235,122,58);">
+            <ul class="list-inline">
+                <li class="list-inline-item me-4">
+                    <a href="https://github.com/MorcaDev" target="_blank">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-github" style="border-color: rgb(0,0,0);color: rgb(0,0,0);">
+                            <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8"></path>
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+            <p class="mb-0">MorcaDev © 2024&nbsp;</p>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
 
-        <button class="main__button">Villa 360°</button>
-        <button class="main__button">Villa AR</button>
-      </div>
-    </div>
-    <!-- js file -->
-    <script type="text/javascript" src="./Js/script02.js"></script>
-  </body>
 </html>

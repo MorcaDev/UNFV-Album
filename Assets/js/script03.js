@@ -1,15 +1,15 @@
 window.addEventListener("load", () => {
   // PROFESORES
   const profesImages = [
-    "../Assets/img/profesores/cesar cuba.jpg",
-    "../Assets/img/profesores/ciro rodriguez.jpg",
-    "../Assets/img/profesores/ivan crispin.jpg",
-    "../Assets/img/profesores/jose gil.jpg",
-    "../Assets/img/profesores/juan francisco madrid cisneros.jpg",
-    "../Assets/img/profesores/roberto casas.jpg",
-    "../Assets/img/profesores/ronal paredes.jpg",
-    "../Assets/img/profesores/tito aguilar.jpg",
-    "../Assets/img/profesores/vladimir hilario quispe orihuela.jpg",
+    "../Content/img/profesores/cesar cuba.jpg",
+    "../Content/img/profesores/ciro rodriguez.jpg",
+    "../Content/img/profesores/ivan crispin.jpg",
+    "../Content/img/profesores/jose gil.jpg",
+    "../Content/img/profesores/juan francisco madrid cisneros.jpg",
+    "../Content/img/profesores/roberto casas.jpg",
+    "../Content/img/profesores/ronal paredes.jpg",
+    "../Content/img/profesores/tito aguilar.jpg",
+    "../Content/img/profesores/vladimir hilario quispe orihuela.jpg",
   ];
 
   const profesImagePlane = document.getElementById("profesImagePlane");
@@ -30,9 +30,9 @@ window.addEventListener("load", () => {
 
   // BIBLIOTECA
   const bibliotecaImage = [
-    "../Assets/img/biblioteca/img_01.jpg",
-    "../Assets/img/biblioteca/img_02.jpg",
-    "../Assets/img/biblioteca/img_03.jpg",
+    "../Content/img/biblioteca/img_01.jpg",
+    "../Content/img/biblioteca/img_02.jpg",
+    "../Content/img/biblioteca/img_03.jpg",
   ];
 
   const bibliotecaImagePlane = document.getElementById("bibliotecaImagePlane");
@@ -53,10 +53,10 @@ window.addEventListener("load", () => {
 
   // SALONES
   const salonImage = [
-    "../Assets/img/salones/img_01.jpg",
-    "../Assets/img/salones/img_02.jpg",
-    "../Assets/img/salones/img_03.jpg",
-    "../Assets/img/salones/img_04.jpg",
+    "../Content/img/salones/img_01.jpg",
+    "../Content/img/salones/img_02.jpg",
+    "../Content/img/salones/img_03.jpg",
+    "../Content/img/salones/img_04.jpg",
   ];
 
   const salonImagePlane = document.getElementById("salonImagePlane");
